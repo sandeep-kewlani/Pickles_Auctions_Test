@@ -13,3 +13,7 @@ please extract the project
 > type in your browser "http://localhost:5000/"
  
 You may able to see the framework's UI. 
+
+First Screen
+
+![My Image](Img_1.png)

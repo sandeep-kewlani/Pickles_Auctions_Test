@@ -12,4 +12,4 @@ please extract the project
 
 > type in your browser "http://localhost:5000/"
  
-You may able to see the framework frontend. 
+You may able to see the framework's UI. 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pickle Auctions Data Loader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <style>h1 {text-align: center;}</style>
+</head>
+<body style="background-color:#8B0000;">
+<div class="container">
+    <div class="row">
+        <a href="/">
+            <img class="for_default" src="https://ventures.pickles.com.au/wp-content/uploads/2017/12/PV-logo.png" align="left" width="173" height="58" alt="">
+        </a>
+        <a  href="/">
+            <img width="173" height="58" class="img-rounded" src="https://ventures.pickles.com.au/wp-content/uploads/2017/12/Datium.png" align="right" alt="">
+        </a>
+    </div>
+    <br>
+    <br>
+    <div style="background-color:#778899;" class="jumbotron">
+        <div class="row">
+            <h1 >Pickle Auctions, Data Ingestion Solution</h1>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <form action="'http://localhost:5000/upload'" method="get">
+            <div class="col-md-6">
+                <input type="button" onclick="uploadFile()" id="csvF" class="btn btn-danger btn-lg btn-block" value="Ingest Csv File"></input>
+            </div>
+        </form>
+        <form action="'http://localhost:5000/upload'" method="get">
+            <div class="col-md-6">
+                <input type="button" onclick="uploadFile()" id="jsonF" class="btn btn-danger btn-lg btn-block" value="Ingest Json File"></input>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <form action="'http://localhost:5000/upload'" method="get">
+            <div class="col-md-6">
+                <input type="button" onclick="uploadFile()" id="textF" class="btn btn-danger btn-lg btn-block" value="Ingest Text/Log File"></input>
+            </div>
+        </form>
+        <form action="'http://localhost:5000/upload'" method="get">
+            <div class="col-md-6">
+                <input type="button" onclick="uploadFile()" id="imgF" class="btn btn-danger btn-lg btn-block" value="Ingest Img File"></input>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function uploadFile() {
+      window.location.href='http://localhost:5000/upload'
+    }
+</script>
+
+</body>
+</html>

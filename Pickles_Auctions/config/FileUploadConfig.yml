@@ -1,0 +1,17 @@
+database:
+  host: 10.92.5.32
+  username: phjobuser
+  password: gr7TrXJH2IlzU!
+  db: partners_db
+
+
+csvFile:
+  name: test.csv
+  file_pattern: test_*.csv
+  file_directory: /data/
+
+
+jsonFile:
+  name: test.json
+  file_pattern: test_*.csv
+  file_directory: /data
